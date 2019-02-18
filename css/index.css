@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
   .container {
     width: 400px;
     border: 1px solid red;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
@@ -151,6 +151,7 @@ header .logo {
 
 @media( max-width: 800px ) {
   .cta {
+    display: flex;
     justify-content: center;
   }
 }
@@ -186,8 +187,8 @@ header .logo {
     display: none;
   }
   .cta .ctatext {
-    /*display: flex;*/
-    /*justify-content: center;*/
+    display: flex;
+    justify-content: center;
   }
   h1 {
     font-size: 60px;
@@ -204,6 +205,7 @@ header .logo {
       width: 400px;
     }
   }
+}
 
 /* Main Content Styles */
 
@@ -232,6 +234,19 @@ header .logo {
 .main-content .bottom-content p {
     padding-right: 20px;
 }
+
+@media( max-width: 800px ) {
+  .top-content {
+    padding: 15px;
+  }
+  .bottom-content {
+    padding: 15px;
+  }
+}
+
+@media( max-width: 500px ) {
+  
+  }
 
 /* Contact Styles */
 
