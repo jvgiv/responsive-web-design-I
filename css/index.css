@@ -91,6 +91,8 @@ header {
     display: flex;
 }
 
+/*    Tablet Header   */
+
 @media( max-width: 800px ) {
   header {
     display: flex;
@@ -98,25 +100,38 @@ header {
     align-items: center;
   }
   header img {
+    display: flex;
     order: 0;
-    width: 15%;
+    width: 20%;
     height: auto;
-    align-items: center;
+    justify-content: center;
   }
   header nav {
     order: 1;
+    width: 600px;
   }
   header nav a {
     justify-content: space-evenly;
     margin: 0 20px;
+    width: 600px;
   }
 }
 
+/*   Mobile Header   */
+
 @media( max-width: 500px ) {
-  header nav a {
+  header nav {
     display: flex;
     flex-direction: column;
+    width: 400px;
+
+  }
+  header nav a {
+    display: flex;
+    justify-content: center;
+    width: 400px;
     margin: 0 20px;
+    border-top: 1px solid grey;
   }
 }
 
@@ -182,6 +197,8 @@ header .logo {
     color: white;
 }
 
+/*                 Innovation on Demand Tablet                    */
+
 @media( max-width: 800px ) {
   .cta img {
     display: none;
@@ -197,6 +214,8 @@ header .logo {
     width: 600px;
   }
 }
+
+/*                 Innovation on Demand Mobile                    */
 
 @media( max-width: 500px ) {
   h1 {
@@ -235,6 +254,8 @@ header .logo {
     padding-right: 20px;
 }
 
+/*               Top Paragraphs Tablet                     */
+
 @media( max-width: 800px ) {
   .top-content {
     padding: 15px;
@@ -244,9 +265,21 @@ header .logo {
   }
 }
 
+/*              Bottom Paragraphs Mobile                       */
+
 @media( max-width: 500px ) {
-  
+  .top-content {
+    display: flex;
+    flex-direction: column;
   }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content img {
+    width: 400px;
+  }
+}
 
 /* Contact Styles */
 
