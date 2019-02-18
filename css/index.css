@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5 {
 @media( max-width: 800px ) {
   .container {
     width: 600px;
-    border: 1px solid red;
     margin: 0 auto;
   }
 }
@@ -79,7 +78,6 @@ h1, h2, h3, h4, h5 {
 @media( max-width: 500px ) {
   .container {
     width: 400px;
-    border: 1px solid red;
     margin: 0 auto;
   }
 }
@@ -99,21 +97,21 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  header img {
+  header img.logo {
     display: flex;
-    order: 0;
+    order: -1;
     width: 20%;
     height: auto;
     justify-content: center;
+    margin: 0;
   }
   header nav {
-    order: 1;
-    width: 600px;
+    width: auto;
   }
   header nav a {
     justify-content: space-evenly;
     margin: 0 20px;
-    width: 600px;
+    width: auto;
   }
 }
 
@@ -124,6 +122,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 400px;
+    margin-left: 170px;
 
   }
   header nav a {
@@ -132,6 +131,10 @@ header {
     width: 400px;
     margin: 0 20px;
     border-top: 1px solid grey;
+    padding: 15px 0;
+  }
+  .contact-nav {
+    border-bottom: 1px solid grey;
   }
 }
 
@@ -179,7 +182,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0;
 }
 
 .cta .cta-text button {
@@ -200,12 +203,22 @@ header .logo {
 /*                 Innovation on Demand Tablet                    */
 
 @media( max-width: 800px ) {
+  .cta {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
   .cta img {
     display: none;
+
   }
-  .cta .ctatext {
+  .cta .cta-text {
+    width: auto;
     display: flex;
     justify-content: center;
+    margin: 0;
   }
   h1 {
     font-size: 60px;
@@ -220,9 +233,18 @@ header .logo {
 @media( max-width: 500px ) {
   h1 {
     font-size: 45px;
+  }
   .middle-img {
       width: 400px;
     }
+  .cta {
+    width: auto;
+  }
+  .cta .cta-text {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
 }
 
@@ -278,6 +300,14 @@ header .logo {
   }
   .main-content img {
     width: 400px;
+    margin: 0 auto;
+  }
+  h4 {
+    padding-top: 40px;
+  }
+  .top-par {
+    padding-top: 0px;
+    margin-top: 0;
   }
 }
 
