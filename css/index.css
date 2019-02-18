@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
   .container {
     width: 600px;
     border: 1px solid red;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
@@ -112,6 +112,14 @@ header {
   }
 }
 
+@media( max-width: 500px ) {
+  header nav a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+}
+
 header nav {
     margin-top: 40px;
     width: 610px;
@@ -139,6 +147,12 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+}
+
+@media( max-width: 800px ) {
+  .cta {
+    justify-content: center;
+  }
 }
 
 .cta .cta-text {
@@ -172,10 +186,24 @@ header .logo {
     display: none;
   }
   .cta .ctatext {
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .middle-img {
+    width: 600px;
   }
 }
+
+@media( max-width: 500px ) {
+  h1 {
+    font-size: 45px;
+  .middle-img {
+      width: 400px;
+    }
+  }
 
 /* Main Content Styles */
 
